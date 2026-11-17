@@ -1,0 +1,19 @@
+# Captured image data and generated feature sequences
+/dataset/
+/sequence_data/
+*.csv
+!/results/*.csv
+/results/live_features_138.csv
+
+# Large experiment artifacts; the final BiGRU checkpoint stays in the repository
+/models/rf_51class_frame_baseline.pkl
+/models/gru_51class_best.pt
+/models/gru_v2_51class_best.pt
+/models/sequence_*.npz
+
+# Local Python files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
